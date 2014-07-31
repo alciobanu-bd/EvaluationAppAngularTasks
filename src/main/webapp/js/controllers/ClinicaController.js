@@ -1,24 +1,15 @@
 
 app.controller('ClinicaController', [
-'$scope',
-function ($scope) {
-
-
-    /*
-    TODO #7
-    a. Injectati $location si $routeParams.
-    b. Creati un array de persoane. Acestea vor fi persoanele programate la clinica.
-
-    Next TODO: list.html
-    */
-
-
+    '$scope', '$location', 'PersonsService', '$routeParams',
+    function ($scope, $location, PersonsService, $routeParams) {
 
     /*
      TODO #17
 
      Pentru ca editarea sa functioneze, trebuie sa initializati obiectul (js-ul) care va fi bindat de view.
      Completati getPersonById din PersonsService si apelati-l aici la incarcarea scope-ului.
+     Un obiect de tip person va fi initializat cu obiectul returnat de getPersonById.
+     In acest mod, field-urile din edit.html vor fi initializate (completate).
      Ce parametru va primi getPersonById? Hint: $routeParams
 
      Next TODO: PersonsService.js (legat de #17)
@@ -61,15 +52,7 @@ function ($scope) {
     }
 
     $scope.deletePerson = function (person) {
-        /*
-         TODO #10
-
-         Apelati metoda de delete din PersonsService.
-         Ce lipseste? Ce trebuie injectat?
-
-         Next TODO: ClinicaServices.js
-
-         */
+        PersonsService.remove(person);
     }
 
     $scope.formatDoctor = function (doctor) {

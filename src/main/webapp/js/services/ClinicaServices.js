@@ -27,22 +27,13 @@ app
     this.personsList = [];
 
     this.remove = function (person) {
-        /*
-            TODO Remove person from array
-            person va avea un camp id
-            Stergeti persoana din array bazandu-va pe campul id care va fi unic pentru fiecare persoana.
-         */
+        for (var i = 0; i < this.list.length; i++) {
+            if (this.list[i].id == person.id) {
+                this.list.splice(i, 1);
+                break;
+            }
+        }
     }
-
-    /*
-     TODO #9
-
-     Modificati array-ul de persoane din controller sa instantieze lista din PersonsService.
-     Completati metoda remove de mai sus, care sterge o persoana din array.
-
-    Next TODO: ClinicaController.js
-
-     */
 
     this.getPersonById = function (id) {
         /*

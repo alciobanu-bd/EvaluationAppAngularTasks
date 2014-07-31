@@ -53,21 +53,36 @@
                             </thead>
                             <tbody>
 
-                            <!--
-                            TODO #8
-
-                            Iterati peste persoane. Persoanele sunt array-ul creat in controller.
-                            Afisati pentru fiecare persoana toate datele necesare, fiecare intr-un <td></td>.  Hint: {{ }}
-
-                            Comparati cu list.jsp. Ce ar trebui modificat?
-
-                            Observatie: Pastrati href-urile, doar modificati astfel incat sa se potriveasca pe aplicatia noastra.
-                            Pentru stergere apelati metoda de stergere creata pe controller.
-                            Pentru modificare programare, rutati catre pagina de edit.
-
-                            Next TODO: ClinicaServices.js
-
-                            -->
+                            <tr ng-repeat="person in persons">
+                                <td>
+                                    {{person.firstName}}
+                                </td>
+                                <td>
+                                    {{person.lastName}}
+                                </td>
+                                <td>
+                                    {{person.doctor.name}}
+                                </td>
+                                <td>
+                                    {{person.doctor.specialityName}}
+                                </td>
+                                <td>
+                                    {{person.appointmentDate | date:'dd/MM/yyyy'}}
+                                </td>
+                                <td>
+                                    {{person.appointmentHour}}
+                                </td>
+                                <td>
+                                    <a ng-href="#/edit/{{person.id}}">
+                                        Modificare programare
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="" ng-click="deletePerson(person)">
+                                        Stergere programare
+                                    </a>
+                                </td>
+                            </tr>
 
                             </tbody>
                         </table>

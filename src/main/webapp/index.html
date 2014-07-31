@@ -17,50 +17,20 @@
     <link href="static/css/sb-admin.css" rel="stylesheet">
 
 </head>
-<body>
-<!--
-TODO #3
-Set ng-app on body.
+<body ng-app="clinica-medicala">
 
-Next TODO: app.js
--->
+<div ng-view></div>
 
-
-<!--
-TODO #6
-
-Faceti rutarea posibila in view.
-
-https://egghead.io/lessons/angularjs-ng-view (are si video daca aveti casti)
-https://docs.angularjs.org/api/ngRoute/directive/ngView
-
-Next TODO: ClinicaController.js
-
--->
-
-
-
-<!--
-TODO #1
-Includeti librariile necesare:
-jquery
-jquery-ui
-angular
-angular-route
-ui-bootstrap-tpls
-uiDate
-app.js
-routes.js
-ClinicaController
-ClinicaServices
-
-Verificati folderul lib pentru include-uri.
-
-Atentie! Ordinea in care se incarca librariile conteaza! De exemplu, angular foloseste jquery, deci jquery trebuie
-incarcat inainte de angular.
-
-Next TODO: app.js
--->
+<script src="lib/jquery.js"></script>
+<script src="lib/jquery-ui-1.11.0/jquery-ui.js"></script>
+<script src="lib/angular.js"></script>
+<script src="lib/ui-bootstrap-tpls-0.11.0.js"></script>
+<script src="lib/angular-route.js"></script>
+<script src="lib/uiDate.js"></script>
+<script src="js/app.js"></script>
+<script src="js/config/routes.js"></script>
+<script src="js/controllers/ClinicaController.js"></script>
+<script src="js/services/ClinicaServices.js"></script>
 
 </body>
 </html>

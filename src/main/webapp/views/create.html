@@ -44,10 +44,10 @@
                             <span>
 
                                 <!--
-                                TODO #11
+                                TODO #12
 
                                 Comparati create.jsp cu create.html
-                                Ce mai lipseste in campurile de mai jos?
+                                Ce lipseste in campurile de mai jos?
                                 Raspuns: Input-urile (si select-ul) nu sunt legate de date (de variabile js).
 
                                 Legati html-ul de js.
@@ -83,6 +83,10 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <label>Date: </label>
+                                        <!--
+                                        TODO
+                                        ui-date este scris ca modul separat. Injectati-l in modulul aplicatiei.
+                                        -->
                                         <input class="form-control" ui-date="dateOptions" name="Date" size="20"/>
                                     </div>
 
@@ -98,7 +102,7 @@
                                 <div>
                                     <input type="submit" class="btn btn-primary" value="Create" ng-click=""/>
                                     <!--
-                                    TODO #12
+                                    TODO #13
 
                                     Apelati la ng-click functia (de pe controller) care adauga programarea.
                                     Ce parametru trebuie sa ia functia aceasta?

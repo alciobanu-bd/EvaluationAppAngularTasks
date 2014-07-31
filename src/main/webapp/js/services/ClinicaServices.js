@@ -30,7 +30,7 @@ app
         /*
             TODO Remove person from array
             person va avea un camp id
-            Stergeti bazandu-va pe campul id care va fi unic pentru fiecare persoana.
+            Stergeti persoana din array bazandu-va pe campul id care va fi unic pentru fiecare persoana.
          */
     }
 
@@ -46,7 +46,7 @@ app
 
     this.getPersonById = function (id) {
         /*
-        TODO #16
+        TODO #18
         */
     }
 

@@ -8,18 +8,20 @@ function ($scope) {
     TODO #7
     a. Injectati $location si $routeParams.
     b. Creati un array de persoane. Acestea vor fi persoanele programate la clinica.
+
+    Next TODO: list.html
     */
 
 
 
     /*
-     TODO #16
+     TODO #17
 
      Pentru ca editarea sa functioneze, trebuie sa initializati obiectul (js-ul) care va fi bindat de view.
      Completati getPersonById din PersonsService si apelati-l aici la incarcarea scope-ului.
      Ce parametru va primi getPersonById? Hint: $routeParams
 
-     Next TODO: ClinicaController.js
+     Next TODO: PersonsService.js (legat de #17)
 
      */
 
@@ -27,7 +29,7 @@ function ($scope) {
 
     $scope.createAppointment = function (person) {
         /*
-         TODO #13
+         TODO #14
 
          Adaugati persoana care a facut programarea.
          La fel ca la funtia de delete, creati-va o functie de add in service-ul de persoane si apelati-o de aici.
@@ -46,7 +48,7 @@ function ($scope) {
     $scope.editAppointment = function (person) {
 
         /*
-         TODO #15
+         TODO #16
 
          Editati persoana care a facut programarea.
          La fel, creati-va o functie de edit/update in service-ul de persoane si apelati-o de aici.
